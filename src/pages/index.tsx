@@ -13,7 +13,7 @@ const ITEMS: ListProps["items"] = [
       "Officia cupidatat laborum incididunt aute. Consectetur qui est laborum proident exercitation reprehenderit ex ex et incididunt sunt consequat aliqua aliqua. Nostrud duis Lorem elit consequat dolor quis.",
     actions: <Button text="Learn More" className="!bg-white text-black" />,
     href: "me",
-    image: "https://picsum.photos/1000/400?grayscale&random=1",
+    image: "https://picsum.photos/1000/400?grayscale&random=1.jpg",
   },
   {
     title: "Veniam quis ",
@@ -26,42 +26,56 @@ const ITEMS: ListProps["items"] = [
     ),
     content:
       "Officia cupidatat laborum incididunt aute. Consectetur qui est laborum proident exercitation reprehenderit ex ex et incididunt sunt consequat aliqua aliqua. Nostrud duis Lorem elit consequat dolor quis.",
-    image: "https://picsum.photos//1000/400?grayscale&random=2",
+    image: "https://picsum.photos//1000/400?grayscale&random=2.jpg",
   },
   {
     title: "Ad Lorem occaecat ",
     description: "Ipsum.cillum.officia dolor",
     content:
       "Officia cupidatat laborum incididunt aute. Consectetur qui est laborum proident exercitation reprehenderit ex ex et incididunt sunt consequat aliqua aliqua. Nostrud duis Lorem elit consequat dolor quis.",
-    image: "https://picsum.photos//1000/400?grayscale&random=3",
+    image: "https://picsum.photos//1000/400?grayscale&random=3.jpg",
   },
   {
     title: "Eiusmod proident magna ",
     description: "Ipsum.cillum.officia dolor",
     content:
       "Officia cupidatat laborum incididunt aute. Consectetur qui est laborum proident exercitation reprehenderit ex ex et incididunt sunt consequat aliqua aliqua. Nostrud duis Lorem elit consequat dolor quis.",
-    image: "https://picsum.photos//1000/400?grayscale&random=4",
+    image: "https://picsum.photos//1000/400?grayscale&random=4.jpg",
   },
   {
     title: "Nisi tempor voluptate ",
     // description: "Ipsum.cillum.officia dolor",
     content:
       "Officia cupidatat laborum incididunt aute. Consectetur qui est laborum proident exercitation reprehenderit ex ex et incididunt sunt consequat aliqua aliqua. Nostrud duis Lorem elit consequat dolor quis.",
-    image: "https://picsum.photos//1000/400?grayscale&random=5",
+    image: "https://picsum.photos//1000/400?grayscale&random=5.jpg",
   },
   {
     title: "Ea dolor ",
     description: "Ipsum.cillum.officia dolor",
     content:
       "Officia cupidatat laborum incididunt aute. Consectetur qui est laborum proident exercitation reprehenderit ex ex et incididunt sunt consequat aliqua aliqua. Nostrud duis Lorem elit consequat dolor quis.",
-    image: "https://picsum.photos//1000/400?grayscale&random=6",
+    image: "https://picsum.photos//1000/400?grayscale&random=6.jpg",
   },
   {
     title: "Adipisicing labore adipisicing ",
     description: "Ipsum.cillum.officia dolor",
     content:
       "Officia cupidatat laborum incididunt aute. Consectetur qui est laborum proident exercitation reprehenderit ex ex et incididunt sunt consequat aliqua aliqua. Nostrud duis Lorem elit consequat dolor quis.",
-    image: "https://picsum.photos//1000/400?grayscale&random=7",
+    image: "https://picsum.photos//1000/400?grayscale&random=7.jpg",
+  },
+  {
+    title: "Consectetur qui est",
+    description: "Ipsum.cillum.officia dolor",
+    content:
+      "Officia cupidatat laborum incididunt aute. Consectetur qui est laborum proident exercitation reprehenderit ex ex et incididunt sunt consequat aliqua aliqua. Nostrud duis Lorem elit consequat dolor quis.",
+    image: "https://picsum.photos//1000/400?grayscale&random=8.jpg",
+  },
+  {
+    title: "laborum proident exercitation ",
+    description: "Ipsum.cillum.officia dolor",
+    content:
+      "Officia cupidatat laborum incididunt aute. Consectetur qui est laborum proident exercitation reprehenderit ex ex et incididunt sunt consequat aliqua aliqua. Nostrud duis Lorem elit consequat dolor quis.",
+    image: "https://picsum.photos//1000/400?grayscale&random=9.jpg",
   },
 ];
 
