@@ -10,7 +10,11 @@ export const List = ({ items, limit }: ListProps) => {
   return (
     <div className="space-y-3">
       {items.slice(0, limit || items.length).map((item, index) => (
-        <ListItem key={`list-item-${index}`} {...item} />
+        <ListItem
+          theme={index % 2 === 0 ? "dark" : "light"}
+          key={`list-item-${index}`}
+          {...item}
+        />
       ))}
 
       <div className="grid grid-cols-2 gap-3 mx-3">
@@ -20,6 +24,7 @@ export const List = ({ items, limit }: ListProps) => {
               theme={Math.floor(index / 2) % 2 === 0 ? "dark" : "light"}
               key={`list-item-${index}`}
               {...item}
+              mini
             />
           );
         })}
@@ -36,6 +41,7 @@ export interface ListItemProps {
   href?: string;
   theme?: "dark" | "light";
   image?: string;
+  mini?: boolean;
 }
 const ListItem = ({
   title,
@@ -44,6 +50,7 @@ const ListItem = ({
   href = "#",
   theme = "dark",
   image,
+  mini = false,
 }: ListItemProps) => {
   const isDark = useMemo(() => theme === "dark", [theme]);
   const fontColor = useMemo(
@@ -52,9 +59,9 @@ const ListItem = ({
   );
   return (
     <div
-      className={`${
-        isDark ? "bg-black" : "bg-white"
-      } p-20 pb-0 text-center cursor-pointer`}
+      className={`${isDark ? "bg-black" : "bg-white"} p-20 ${
+        mini ? "" : "pb-0"
+      } text-center cursor-pointer`}
     >
       <Link href={href}>
         <h2
