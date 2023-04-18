@@ -11,6 +11,12 @@ export const List = ({ items, limit }: ListProps) => {
       {items.slice(0, limit || items.length).map((item, index) => (
         <ListItem key={`list-item-${index}`} {...item} />
       ))}
+
+      <div className="grid grid-cols-2 gap-3 mx-3">
+        {items.slice(limit, items.length).map((item, index) => (
+          <ListItem key={`list-item-${index}`} {...item} />
+        ))}
+      </div>
     </div>
   );
 };
@@ -32,11 +38,11 @@ const ListItem = ({
     <div className="bg-black p-20 text-center cursor-pointer">
       <Link href={href}>
         <h2
-          className={`text-5xl font-medium ${description ? "mb-5" : "mb-10"}`}
+          className={`text-6xl font-medium ${description ? "mb-5" : "mb-10"}`}
         >
           {title}
         </h2>
-        <p className="text-2xl mb-5">{description}</p>
+        <p className="text-3xl mb-5">{description}</p>
         {actions}
       </Link>
     </div>
