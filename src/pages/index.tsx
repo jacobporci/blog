@@ -13,10 +13,10 @@ const ITEMS: ListProps["items"] = [
       "Officia cupidatat laborum incididunt aute. Consectetur qui est laborum proident exercitation reprehenderit ex ex et incididunt sunt consequat aliqua aliqua. Nostrud duis Lorem elit consequat dolor quis.",
     actions: <Button text="Learn More" className="!bg-white text-black" />,
     href: "me",
+    image: "https://picsum.photos/1000/300?grayscale&random=1",
   },
   {
-    title:
-      "Veniam quis excepteur incididunt occaecat cupidatat ipsum esse sint aute culpa magna culpa nisi.",
+    title: "Veniam quis ",
     description: "Occaecat.exercitation.ad veniam anim eiusmod.",
     actions: (
       <>
@@ -26,41 +26,42 @@ const ITEMS: ListProps["items"] = [
     ),
     content:
       "Officia cupidatat laborum incididunt aute. Consectetur qui est laborum proident exercitation reprehenderit ex ex et incididunt sunt consequat aliqua aliqua. Nostrud duis Lorem elit consequat dolor quis.",
+    image: "https://picsum.photos//1000/300?grayscale&random=2",
   },
   {
-    title:
-      "Ad Lorem occaecat non qui exercitation elit minim ad est ex nostrud qui do.",
+    title: "Ad Lorem occaecat ",
     description: "Ipsum.cillum.officia dolor",
     content:
       "Officia cupidatat laborum incididunt aute. Consectetur qui est laborum proident exercitation reprehenderit ex ex et incididunt sunt consequat aliqua aliqua. Nostrud duis Lorem elit consequat dolor quis.",
+    image: "https://picsum.photos//1000/300?grayscale&random=3",
   },
   {
-    title:
-      "Ad Lorem occaecat non qui exercitation elit minim ad est ex nostrud qui do.",
+    title: "Eiusmod proident magna ",
     description: "Ipsum.cillum.officia dolor",
     content:
       "Officia cupidatat laborum incididunt aute. Consectetur qui est laborum proident exercitation reprehenderit ex ex et incididunt sunt consequat aliqua aliqua. Nostrud duis Lorem elit consequat dolor quis.",
+    image: "https://picsum.photos//1000/300?grayscale&random=4",
   },
   {
-    title:
-      "Ad Lorem occaecat non qui exercitation elit minim ad est ex nostrud qui do.",
+    title: "Nisi tempor voluptate ",
+    // description: "Ipsum.cillum.officia dolor",
+    content:
+      "Officia cupidatat laborum incididunt aute. Consectetur qui est laborum proident exercitation reprehenderit ex ex et incididunt sunt consequat aliqua aliqua. Nostrud duis Lorem elit consequat dolor quis.",
+    image: "https://picsum.photos//1000/300?grayscale&random=5",
+  },
+  {
+    title: "Ea dolor ",
     description: "Ipsum.cillum.officia dolor",
     content:
       "Officia cupidatat laborum incididunt aute. Consectetur qui est laborum proident exercitation reprehenderit ex ex et incididunt sunt consequat aliqua aliqua. Nostrud duis Lorem elit consequat dolor quis.",
+    image: "https://picsum.photos//1000/300?grayscale&random=6",
   },
   {
-    title:
-      "Ad Lorem occaecat non qui exercitation elit minim ad est ex nostrud qui do.",
+    title: "Adipisicing labore adipisicing ",
     description: "Ipsum.cillum.officia dolor",
     content:
       "Officia cupidatat laborum incididunt aute. Consectetur qui est laborum proident exercitation reprehenderit ex ex et incididunt sunt consequat aliqua aliqua. Nostrud duis Lorem elit consequat dolor quis.",
-  },
-  {
-    title:
-      "Ad Lorem occaecat non qui exercitation elit minim ad est ex nostrud qui do.",
-    description: "Ipsum.cillum.officia dolor",
-    content:
-      "Officia cupidatat laborum incididunt aute. Consectetur qui est laborum proident exercitation reprehenderit ex ex et incididunt sunt consequat aliqua aliqua. Nostrud duis Lorem elit consequat dolor quis.",
+    image: "https://picsum.photos//1000/300?grayscale&random=7",
   },
 ];
 
