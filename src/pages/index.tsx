@@ -16,7 +16,8 @@ const ITEMS: ListProps["items"] = [
     image: "https://picsum.photos/1000/400?grayscale&random=1.jpg",
   },
   {
-    title: "Veniam quis ",
+    title: "Test Netflix-like ",
+    href: "netflix",
     description: "Occaecat.exercitation.ad veniam anim eiusmod.",
     actions: (
       <>
