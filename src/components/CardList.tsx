@@ -6,7 +6,7 @@ interface Props {
 }
 export default function CardList({ data }: Props) {
   return (
-    <div>
+    <div className="flex flex-col gap-10">
       {data.map(({ name, shows }) => (
         <div key={name}>
           <h1 className="text-black text-xl font-bold">{name}</h1>

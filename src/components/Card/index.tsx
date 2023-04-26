@@ -25,7 +25,10 @@ export default function Card({ id }: Props) {
 
   if (isLoading || error) {
     return (
-      <div className="text-blue-800 h-80 w-52 flex items-center justify-center border-2 rounded-xl">
+      <div
+        className="text-blue-800 flex items-center justify-center border-2 rounded-xl"
+        style={{ height: 300, width: 200 }}
+      >
         ...loading...
       </div>
     );
