@@ -23,6 +23,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
   try {
     const show = SHOWS.find(({ id }) => id === req.query.id);
     if (show) {
+      // emulate delay in network
       setTimeout(() => {
         res.status(200).json({ data: show });
       }, 1000);
