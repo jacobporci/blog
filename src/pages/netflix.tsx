@@ -19,8 +19,6 @@ const fetchGenres = async () => {
 export default function Netflix() {
   const { data, isLoading } = useQuery(["netflix"], fetchGenres);
   return (
-    <main className="flex min-h-screen flex-col  my-3">
-      {isLoading ? <div>...loading</div> : data && <CardList data={data} />}
-    </main>
+    <>{isLoading ? <div>...loading</div> : data && <CardList data={data} />}</>
   );
 }

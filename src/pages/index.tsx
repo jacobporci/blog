@@ -82,8 +82,8 @@ const ITEMS: ListProps["items"] = [
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center my-3">
+    <>
       <List items={ITEMS} limit={3} />
-    </main>
+    </>
   );
 }
