@@ -19,6 +19,8 @@ const fetchGenres = async () => {
 export default function Netflix() {
   const { data, isLoading } = useQuery(["netflix"], fetchGenres);
   return (
-    <>{isLoading ? <div>...loading</div> : data && <CardList data={data} />}</>
+    <div className="px-20 py-5">
+      {isLoading ? <div>...loading</div> : data && <CardList data={data} />}
+    </div>
   );
 }
