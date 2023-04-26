@@ -11,24 +11,28 @@ export const List = ({ items, limit }: ListProps) => {
     <div className="space-y-3">
       {items.slice(0, limit || items.length).map((item, index) => (
         <ListItem
-          theme={index % 2 === 0 ? "dark" : "light"}
+          theme={item.theme || index % 2 === 0 ? "dark" : "light"}
           key={`list-item-${index}`}
           {...item}
         />
       ))}
 
-      <div className="grid grid-cols-2 gap-3 mx-3">
-        {items.slice(limit, items.length).map((item, index) => {
-          return (
-            <ListItem
-              theme={Math.floor(index / 2) % 2 === 0 ? "dark" : "light"}
-              key={`list-item-${index}`}
-              {...item}
-              mini
-            />
-          );
-        })}
-      </div>
+      {items.length > 3 ? (
+        <div className="grid grid-cols-2 gap-3 mx-3">
+          {items.slice(limit, items.length).map((item, index) => {
+            return (
+              <ListItem
+                theme={Math.floor(index / 2) % 2 === 0 ? "dark" : "light"}
+                key={`list-item-${index}`}
+                {...item}
+                mini
+              />
+            );
+          })}
+        </div>
+      ) : (
+        <></>
+      )}
     </div>
   );
 };
@@ -71,7 +75,7 @@ const ListItem = ({
         >
           {title}
         </h2>
-        <p className={`text-3xl mb-5 ${fontColor}`}>{description}</p>
+        <p className={`text-3xl mb-2 ${fontColor}`}>{description}</p>
         {actions}
         {image && (
           <div className="flex justify-center mt-10">
